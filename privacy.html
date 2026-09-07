@@ -40,7 +40,10 @@
     text-transform: uppercase; color: var(--accent); margin: 0 0 6px;
   }
   h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
-  .date { color: var(--muted); font-size: 14px; margin: 0; }
+  .date { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+  /* 두 언어가 한 주소에 있습니다 - 콘솔에 넣는 주소를 하나로 둡니다. */
+  .langs { font-size: 14px; margin: 0; }
+  .langs a { margin-right: 14px; }
   h2 {
     font-size: 18px; margin: 34px 0 10px; padding-top: 20px;
     border-top: 1px solid var(--line);
@@ -53,14 +56,12 @@
     padding: 16px 18px; margin: 0 0 8px;
   }
   .lede p:last-child { margin-bottom: 0; }
-  code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 0.9em; background: var(--surface);
-    border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px;
-  }
+  .rule { margin: 56px 0 0; border: 0; border-top: 3px double var(--line); }
+  .part { padding-top: 36px; }
+  .part h1 { font-size: 24px; }
   a { color: var(--accent); }
   footer {
-    margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line);
+    margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line);
     color: var(--muted); font-size: 14px;
   }
 </style>
@@ -68,10 +69,11 @@
 <body>
 <main>
 
-<header>
+<header id="top">
   <p class="brand">SoolSool</p>
   <h1>Privacy Policy</h1>
   <p class="date">Last updated: 7 September 2026</p>
+  <p class="langs"><strong>English</strong> <a href="#ko">한국어</a></p>
 </header>
 
 <div class="lede">
@@ -80,9 +82,9 @@
   keeps your learning progress on your own device and sends nothing anywhere.</p>
 </div>
 
-<p>This policy explains what SoolSool (“the app”) does and does not do with
-information. It applies to the SoolSool Android app published on Google Play by
-<strong>Devless Inc.</strong> (“we”).</p>
+<p>This policy explains what SoolSool (&ldquo;the app&rdquo;) does and does not
+do with information. It applies to the SoolSool Android app published on Google
+Play by <strong>Devless Inc.</strong> (&ldquo;we&rdquo;).</p>
 
 <h2>What the app stores on your device</h2>
 
@@ -90,15 +92,16 @@ information. It applies to the SoolSool Android app published on Google Play by
 gives to an app, and both readable only by this app:</p>
 
 <ul>
-  <li><strong>Your progress</strong> — for each unit: which practice items you
-  have answered correctly, your best quiz score, and how many times you have
-  finished that unit’s quiz.</li>
-  <li><strong>One setting</strong> — whether audio auto-play is on or off.</li>
+  <li><strong>Your progress</strong> &mdash; for each unit: which practice items
+  you have answered correctly, your best quiz score, and how many times you have
+  finished that unit&rsquo;s quiz.</li>
+  <li><strong>One setting</strong> &mdash; whether audio auto-play is on or
+  off.</li>
 </ul>
 
 <p>That is the complete list. These values never leave your device, are not
 backed up to any server of ours, and are permanently removed when you uninstall
-the app or clear its data from Android’s app settings.</p>
+the app or clear its data from Android&rsquo;s app settings.</p>
 
 <h2>What the app does not do</h2>
 
@@ -118,8 +121,8 @@ the app or clear its data from Android’s app settings.</p>
 </ul>
 
 <p>All lesson text and all audio are bundled inside the app as ordinary files.
-Nothing is streamed and nothing is recorded — the app never uses a microphone
-and performs no speech recognition.</p>
+Nothing is streamed and nothing is recorded &mdash; the app never uses a
+microphone and performs no speech recognition.</p>
 
 <h2>Purchases</h2>
 
@@ -127,10 +130,11 @@ and performs no speech recognition.</p>
 unlocks the remaining units. All payment is handled by <strong>Google
 Play</strong>. We never see, receive, or store your card number or billing
 details. Google Play tells the app only whether the purchase exists on your
-Google account, which is also how “restore purchase” works on a new device.</p>
+Google account, which is also how &ldquo;restore purchase&rdquo; works on a new
+device.</p>
 
 <p>Google provides developers with the standard order records for their own
-sales. Google’s handling of your payment information is governed by the
+sales. Google&rsquo;s handling of your payment information is governed by the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>Children</h2>
@@ -142,17 +146,106 @@ anyone, regardless of age.</p>
 <h2>Changes to this policy</h2>
 
 <p>If this policy changes, we will update this page and the date at the top. If
-a change is significant, we will also note it in the app’s Google Play listing.
-Older versions of the app are not retroactively changed by an update to this
-page.</p>
+a change is significant, we will also note it in the app&rsquo;s Google Play
+listing. Older versions of the app are not retroactively changed by an update to
+this page.</p>
 
 <h2>Contact</h2>
 
 <p>Questions about this policy or about the app:
 <a href="mailto:romanticcoder@gmail.com">romanticcoder@gmail.com</a></p>
 
+<hr class="rule">
+
+<section class="part" id="ko" lang="ko">
+
+<header>
+  <p class="brand">SoolSool</p>
+  <h1>개인정보처리방침</h1>
+  <p class="date">최종 수정일: 2026년 9월 7일</p>
+  <p class="langs"><a href="#top">English</a> <strong>한국어</strong></p>
+</header>
+
+<div class="lede">
+  <p><strong>술술은 개인정보를 수집하지 않습니다.</strong> 계정도, 분석
+  도구도, 광고도, 어떤 형태의 추적도 없습니다. 학습 진도는 이용자의
+  기기에만 남고 어디로도 전송되지 않습니다.</p>
+</div>
+
+<p>이 방침은 <strong>Devless Inc.</strong>(이하 &ldquo;회사&rdquo;)가 Google
+Play 에 배포하는 안드로이드 앱 <strong>SoolSool</strong>(술술, 이하
+&ldquo;앱&rdquo;)에 적용됩니다.</p>
+
+<h2>기기에 저장하는 것</h2>
+
+<p>앱은 두 가지를 저장합니다. 둘 다 안드로이드가 앱마다 따로 주는 전용 저장
+공간에 들어가며, 이 앱 자신만 읽을 수 있습니다.</p>
+
+<ul>
+  <li><strong>학습 진도</strong> &mdash; Unit 마다 맞힌 연습 문항, 퀴즈 최고
+  점수, 그 Unit 의 퀴즈를 끝낸 횟수.</li>
+  <li><strong>설정 한 가지</strong> &mdash; 소리 자동 재생을 켰는지
+  껐는지.</li>
+</ul>
+
+<p>이것이 전부입니다. 이 값들은 기기를 벗어나지 않고, 회사의 어떤 서버에도
+백업되지 않으며, 앱을 삭제하거나 안드로이드 설정에서 앱 데이터를 지우면 함께
+영구히 사라집니다.</p>
+
+<h2>하지 않는 것</h2>
+
+<ul>
+  <li>계정 생성이나 로그인을 <strong>요구하지 않습니다</strong>.</li>
+  <li>이름, 이메일 주소, 전화번호를 비롯한 어떤 식별 정보도
+  <strong>수집하지 않습니다</strong>.</li>
+  <li>위치, 연락처, 사진, 파일, 마이크, 카메라에 <strong>접근하지
+  않습니다</strong>. 앱이 요구하는 <strong>안드로이드 런타임 권한은 하나도
+  없습니다</strong>.</li>
+  <li><strong>광고가 없고</strong> 광고 식별자도 쓰지 않습니다.</li>
+  <li><strong>분석 도구와 오류 수집 도구가 없으며</strong>, 정보를 수집하는
+  제3자 SDK 도 넣지 않았습니다.</li>
+  <li>누구에게도 정보를 <strong>판매하거나 제공하지 않습니다</strong>. 가지고
+  있는 것이 없기 때문입니다.</li>
+</ul>
+
+<p>학습 문장과 소리는 모두 앱 안에 파일로 들어 있습니다. 스트리밍도 녹음도
+없으며, 앱은 마이크를 쓰지 않고 음성 인식도 하지 않습니다.</p>
+
+<p>수집하는 개인정보가 없으므로 보유 기간, 파기 절차, 제3자 제공, 처리 위탁,
+국외 이전에 해당하는 사항이 없습니다.</p>
+
+<h2>결제</h2>
+
+<p>앱에는 나머지 Unit 을 여는 <strong>1회 구매 상품 하나</strong>가 있습니다.
+결제는 전부 <strong>Google Play</strong> 가 처리합니다. 회사는 카드 번호나
+결제 정보를 보거나 전달받거나 저장하지 않습니다. Google Play 는 앱에
+<strong>구매가 있는지</strong>만 알려주며, 기기를 바꿨을 때의 구매 복원도 같은
+방식으로 이루어집니다.</p>
+
+<p>Google 은 개발자에게 자기 판매분의 주문 기록을 제공합니다. Google 의 결제
+정보 처리는 <a href="https://policies.google.com/privacy?hl=ko">Google
+개인정보처리방침</a>을 따릅니다.</p>
+
+<h2>아동</h2>
+
+<p>앱은 일반 이용자를 대상으로 하는 어학 학습 앱이며 만 14세 미만 아동을
+대상으로 하지 않습니다. 나이와 무관하게 어떤 개인정보도 수집하지 않습니다.</p>
+
+<h2>방침의 변경</h2>
+
+<p>이 방침이 바뀌면 이 페이지와 위의 날짜를 함께 고칩니다. 중요한 변경은
+Google Play 스토어 등록정보에도 적습니다. 이 페이지를 고쳤다고 해서 이미
+배포된 예전 버전의 앱이 소급해 바뀌지는 않습니다.</p>
+
+<h2>문의</h2>
+
+<p>이 방침이나 앱에 관한 문의:
+<a href="mailto:romanticcoder@gmail.com">romanticcoder@gmail.com</a></p>
+
+</section>
+
 <footer>
-  SoolSool — Korean pattern practice. &copy; Devless Inc.
+  SoolSool &mdash; Korean pattern practice. &copy; Devless Inc.
 </footer>
 
 </main>
