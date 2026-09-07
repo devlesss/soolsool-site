@@ -3,7 +3,9 @@
 SoolSool 의 **공개 페이지**입니다. GitHub Pages 로 그대로 나갑니다.
 
 - `privacy.html` — 개인정보처리방침. Play Console 이 **내부 테스트부터**
-  공개 URL 을 요구합니다.
+  공개 URL 을 요구합니다. 영문과 한국어가 **한 장에** 있습니다 —
+  주소를 하나로 두어야 콘솔에 넣을 값이 하나가 됩니다.
+  <https://devlesss.github.io/soolsool-site/privacy.html>
 - `index.html` — 저장소 뿌리로 들어왔을 때 404 를 안 보이려고 둔 한 장.
 
 ## 왜 저장소를 따로 두나
